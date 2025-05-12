@@ -9,13 +9,15 @@ int main(){
 
     Grid grid = Grid();
     grid.Print();
-    LBlock block= LBlock();
+    JBlock jblock= JBlock();
+    jblock.Move(4,3);
 
     while(WindowShouldClose() ==false){
         BeginDrawing();
         ClearBackground(darkBlue);
         grid.Draw();
-        block.Draw();
+        jblock.Draw();
+        jblock.Move(4,3);
         EndDrawing();
     }
     CloseWindow();
