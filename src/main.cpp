@@ -6,9 +6,9 @@ int main(){
     InitWindow(300,600, "raylib Tetris");
     SetTargetFPS(60);
 
-    Grid grid = Grid();
     Game game = Game();
     while(WindowShouldClose() ==false){
+        game.HandleInput();
         BeginDrawing();
         ClearBackground(darkBlue);
         game.Draw();

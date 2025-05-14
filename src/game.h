@@ -8,6 +8,10 @@ class Game{
         Grid grid;
         Block GetRandomBlock();
         std::vector<Block> GetAllBlocks();
+        void HandleInput();
+        void MoveBlockLeft();
+        void MoveBlockRight();
+        void MoveBlockDown();
         void Draw();
     private:
         std::vector<Block> blocks;
