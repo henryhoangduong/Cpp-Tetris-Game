@@ -13,6 +13,7 @@ class Block{
         std::vector<Position> GetCellPositions();
         void Draw();
         void Move(int rows, int columns);
+        void Rotate();
     private:
         int cellSize;
         int rotationState;

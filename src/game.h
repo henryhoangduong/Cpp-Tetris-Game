@@ -14,6 +14,7 @@ class Game{
         void MoveBlockDown();
         void Draw();
     private:
+        void RotateBlock();
         bool IsBlockOutside();
         std::vector<Block> blocks;
         Block currentBlock;
