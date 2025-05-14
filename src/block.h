@@ -14,6 +14,7 @@ class Block{
         void Draw();
         void Move(int rows, int columns);
         void Rotate();
+        void UndoRatation();
     private:
         int cellSize;
         int rotationState;

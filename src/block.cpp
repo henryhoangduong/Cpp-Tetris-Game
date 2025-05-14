@@ -38,3 +38,10 @@ void Block::Rotate(){
         rotationState=0;
     }
 }
+
+void Block::UndoRatation(){
+    rotationState--;
+    if(rotationState==-1){
+        rotationState=cellSize-1;
+    }
+}
